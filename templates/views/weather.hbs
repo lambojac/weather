@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headlinks}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container mt-5 mb-4">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" id="input-value" placeholder="Search Your City..."
+                aria-label="Search" autocomplete="off" />
+            <button class="btn btn-outline-danger" id="submit-btn" type="submit">
+                Search
+            </button>
+        </form>
+    </div>
+
+    <center>
+        <div class="container">
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header" id="card-header">Tuesday  , March 20 </div>
+                <div class="card-body">
+                    <h5 class="card-title" id="card-title">Get Temperature</h5>
+                    <p id = "temp"><span>0</span>  <sup> C </sup></p>
+                    <p id = "temp_status"><i class = "fa fa-cloud " aria-hidden="true"></i></p>
+                    <p class="card-text" id="location"></p>
+                    <p class="card-text" id="temp"></p>
+                    <p class="card-text" id="min-temp"></p>
+                    <p class="card-text" id="max-temp"></p>
+                    <p class="card-text" id="speed"></p>
+                    <p class="card-text" id="degree"></p>
+                    <p class="card-text" id="humidity"></p>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+
+    {{>footer}}
+    {{>footerlinks}}
+
+    <script src="js/main.js">
+    const getCurrentDay =() => {
+        let weekend = new Array(7);
+        weekend[0] ="Sunday";
+        weekend[1] ="Monday";
+        weekend[2] ="Tuesday";
+        weekend[3] ="Wednesday";
+        weekend[4] ="Thursday";
+        weekend[5] ="Friday";
+        weekend[6] ="Saturday";
+
+        let CurrentTime = new Date();
+        days = weekday[currentTime.getDay()];
+        let day = document.getElementById('day');
+       day.innerText=days;
+    };
+
+    getCurrentDay();
+    </script>
+</body>
+
+</html>

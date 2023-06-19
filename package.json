@@ -1,0 +1,18 @@
+{
+  "name": "weatherweb",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adamo kehinde hassan",
+  "license": "ISC"
+}
