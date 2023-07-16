@@ -9,9 +9,13 @@
     "hbs": "^4.2.0",
     "nodemon": "^2.0.20"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
   "scripts": {
-    "start":"node app"
+    "start:dev": "nodemon index",
+    "start": "node app"
   },
   "author": "Adamo kehinde hassan",
   "license": "ISC"
